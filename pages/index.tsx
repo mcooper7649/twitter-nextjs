@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Feed from '../components/Feed';
 import Sidebar from '../components/Sidebar';
 import Widgets from '../components/Widgets';
+import { fetchTweets } from '../utils/fetchTweets';
 
 const Home: NextPage = () => {
   return (
