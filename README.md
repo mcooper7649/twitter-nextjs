@@ -48,4 +48,9 @@ This uses the same query language as graphql.
   _id,
   ...
 }
+
+*[_type == "tweet" && !blockTweet] {
+  _id,
+  ...
+} | order(_createdAt desc)
 ```
